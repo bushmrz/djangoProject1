@@ -22,6 +22,7 @@ from crm import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.first_page),
-    path('thanks_page/', views.thanks_page, name='thanks_page')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('thx/', views.thx, name = 'thx')
+   # path('thanks/', views.thanks_page, name='thanks_page'),
+] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
