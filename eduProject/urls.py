@@ -24,5 +24,5 @@ urlpatterns = [
     path('', views.first_page),
     path('thx/', views.thx, name = 'thx')
    # path('thanks/', views.thanks_page, name='thanks_page'),
-] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
